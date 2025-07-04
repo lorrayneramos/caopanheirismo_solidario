@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cãopanheirismo Solidário - ONGs</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      background-color: #fff2e6;
+      color: #333;
+    }
+    header {
+      background-color: #f7931e;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+    nav {
+      background-color: #c76a1f;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 20px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: #b55e1a;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+    .ong-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .ong-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+    }
+    .ong-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .ong-card h3 {
+      color: #c76a1f;
+      margin-bottom: 10px;
+    }
+    .ong-card p {
+      font-size: 0.95em;
+      margin-bottom: 15px;
+    }
+    .ong-card a {
+      background-color: #f7931e;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .ong-card a:hover {
+      background-color: #e67e1d;
+    }
+    footer {
+      background-color: #f7931e;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cãopanheirismo Solidário</h1>
+  </header>
+
+  <nav>
+    <a href="dashboardCS.html">Perfil</a>
+    <a href="ongs.html">ONGs e Abrigos</a>
+    <a href="campanha.html">Campanhas</a>
+    <a href="blog.html">Blog</a>
+    <a href="contato.html">Contato</a>
+    <a href="#">Logout</a>
+  </nav>
+
+  <div class="container">
+    <section class="ong-list-section">
+      <h2 style="text-align: center; color: #c76a1f; margin-bottom: 30px;">ONGs e Abrigos</h2>
+      <div class="ong-list">
+        <div class="ong-card">
+          <img src="ong1.jpg" alt="ONG Patinhas Felizes">
+          <h3>Patinhas Felizes</h3>
+          <p>ONG dedicada ao resgate e adoção de cães e gatos em situação de abandono. Atua em feiras e campanhas educativas.</p>
+          <a href="detalhes-ong.html">Ver mais</a>
+        </div>
+        <div class="ong-card">
+          <img src="ong2.jpg" alt="ONG Lar Amigo">
+          <h3>Lar Amigo</h3>
+          <p>Oferece abrigo temporário para cães idosos ou vítimas de maus-tratos, enquanto busca lares definitivos.</p>
+          <a href="detalhes-ong.html">Ver mais</a>
+        </div>
+        <div class="ong-card">
+          <img src="ong3.jpg" alt="ONG Coração Peludo">
+          <h3>Coração Peludo</h3>
+          <p>Focada em conscientização sobre adoção responsável, castração e cuidados com animais de rua.</p>
+          <a href="detalhes-ong.html">Ver mais</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Cãopanheirismo Solidário - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

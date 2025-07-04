@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cãopanheirismo Solidário - Blog</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      background-color: #fff2e6;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #f7931e;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+    nav {
+      background-color: #c76a1f;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 20px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: #b55e1a;
+    }
+    main {
+      flex-grow: 1;
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    h1 {
+      color: #c76a1f;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .post-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .post-card:hover {
+      transform: translateY(-5px);
+    }
+    .post-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .post-content {
+      padding: 15px 20px;
+    }
+    .post-content h2 {
+      font-size: 1.3rem;
+      color: #c76a1f;
+      margin-bottom: 10px;
+    }
+    .post-content p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    .post-content a {
+      text-decoration: none;
+      color: #f7931e;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    .post-content a:hover {
+      color: #e67e1d;
+    }
+    footer {
+      background-color: #f7931e;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: auto;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Cãopanheirismo Solidário
+  </header>
+
+  <nav>
+    <a href="telaprincipal.html">Home</a>
+    <a href="dashboardCS.html">Perfil</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="ongs.html">ONGs e Abrigos</a>
+    <a href="blog.html">Blog</a>
+    <a href="doeagora.html">Doe Agora</a>
+    <a href="campanha.html">Campanhas</a>
+    <a href="contato.html">Contato</a>
+    <a href="loginCS.html">Login</a>
+  </nav>
+
+  <main>
+    <h1>Blog do Cãopanheirismo</h1>
+    <div class="blog-grid">
+      <div class="post-card">
+        <img src="blog1.jpg" alt="Dicas de adoção responsável">
+        <div class="post-content">
+          <h2>Adoção Responsável: O que Você Precisa Saber</h2>
+          <p>Adotar um animal é um ato de amor, mas requer responsabilidade e planejamento. Veja dicas essenciais antes de levar um pet para casa.</p>
+          <a href="#">Leia Mais</a>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <img src="blog2.jpg" alt="Campanha de arrecadação">
+        <div class="post-content">
+          <h2>Campanhas de Arrecadação: Como Ajudar</h2>
+          <p>Descubra como pequenas ações podem fazer grande diferença para as ONGs parceiras. Participe das nossas campanhas solidárias!</p>
+          <a href="#">Leia Mais</a>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <img src="blog3.jpg" alt="Saúde animal">
+        <div class="post-content">
+          <h2>Cuidados Básicos com a Saúde Animal</h2>
+          <p>Saiba quais são os principais cuidados veterinários, vacinas e dicas de bem-estar para cães e gatos.</p>
+          <a href="#">Leia Mais</a>
+        </div>
+      </div>
+
+      <!-- Pode adicionar mais cards aqui -->
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Cãopanheirismo Solidário - Todos os direitos reservados.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cãopanheirismo Solidário - Doe Agora</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      background-color: #fff2e6;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #f7931e;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+    nav {
+      background-color: #c76a1f;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 20px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: #b55e1a;
+    }
+    main {
+      flex-grow: 1;
+      max-width: 900px;
+      margin: 30px auto;
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 30px 40px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #c76a1f;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    p.description {
+      margin-bottom: 25px;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: 0 auto 40px auto;
+    }
+    label {
+      font-weight: 600;
+      color: #c76a1f;
+      margin-bottom: 5px;
+      display: block;
+    }
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      padding: 12px;
+      border-radius: 6px;
+      border: 1.5px solid #ccc;
+      font-size: 1rem;
+      resize: vertical;
+      transition: border-color 0.3s;
+      width: 100%;
+      font-family: inherit;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #f7931e;
+      outline: none;
+    }
+    textarea {
+      min-height: 100px;
+    }
+    .buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    }
+    button {
+      background-color: #f7931e;
+      color: #fff;
+      border: none;
+      padding: 14px 28px;
+      font-weight: 700;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(247,147,30,0.4);
+      transition: background 0.3s;
+      min-width: 120px;
+    }
+    button:hover {
+      background-color: #e67e1d;
+    }
+    section.contact-info {
+      background: #fff7e6;
+      padding: 20px 30px;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: 0 auto;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    }
+    section.contact-info h2 {
+      color: #c76a1f;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    section.contact-info p {
+      font-size: 1rem;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    footer {
+      background-color: #f7931e;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: auto;
+      font-weight: 600;
+    }
+    /* Responsividade */
+    @media (max-width: 600px) {
+      main {
+        padding: 20px;
+        margin: 20px;
+      }
+      form {
+        max-width: 100%;
+      }
+      section.contact-info {
+        max-width: 100%;
+        margin: 20px;
+      }
+      .buttons {
+        flex-direction: column;
+      }
+      button {
+        width: 100%;
+        min-width: unset;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Cãopanheirismo Solidário
+  </header>
+  <nav>
+    <a href="telaprincipal.html">Home</a>
+    <a href="dashboardCS.html">Perfil</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="ongs.html">ONGs e Abrigos</a>
+    <a href="blog.html">Blog</a>
+    <a href="doeagora.html">Doe Agora</a>
+    <a href="contato.html">Contato</a>
+    <a href="campanha.html">Campanhas</a> 
+    <a href="loginCS.html">Login</a>
+   
+  </nav>
+
+  <main>
+    <h1>Doe Agora e Faça a Diferença!</h1>
+    <p class="description">
+      Sua contribuição é fundamental para o cuidado e proteção dos animais assistidos pelas ONGs parceiras.  
+      Preencha o formulário abaixo para realizar sua doação e ajudar quem precisa!
+    </p>
+
+    <form id="donation-form">
+      <label for="nome">Nome completo</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required />
+
+      <label for="tipoDoacao">Tipo de doação</label>
+      <select id="tipoDoacao" name="tipoDoacao" required>
+        <option value="" disabled selected>Selecione uma opção</option>
+        <option value="racao">Ração</option>
+        <option value="dinheiro">Dinheiro</option>
+        <option value="produtos">Produtos (medicamentos, cobertores, higiene)</option>
+        <option value="voluntariado">Voluntariado</option>
+      </select>
+
+      <label for="quantidade">Quantidade (se aplicável)</label>
+      <input type="text" id="quantidade" name="quantidade" placeholder="Ex: 5kg de ração, R$100" />
+
+      <label for="mensagem">Mensagem (opcional)</label>
+      <textarea id="mensagem" name="mensagem" placeholder="Deixe uma mensagem ou comentário"></textarea>
+
+      <div class="buttons">
+        <button type="submit">Enviar Doação</button>
+        <button type="reset">Limpar</button>
+      </div>
+    </form>
+
+    <section class="contact-info">
+      <h2>Outras formas de ajudar</h2>
+      <p><strong>Depósito bancário:</strong> Banco Solidário, Agência 1234, Conta 56789-0 (Cãopanheirismo Solidário)</p>
+      <p><strong>Entrega presencial:</strong> Rua das Flores, 123 - Rio de Janeiro, RJ (Seg a Sex, 9h às 17h)</p>
+      <p><strong>Contato para dúvidas:</strong> contato@caopsolidario.org | (21) 99999-9999</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Cãopanheirismo Solidário - Todos os direitos reservados.
+  </footer>
+
+  <script>
+    // Para demo, só prevenir envio e mostrar alerta
+    document.getElementById('donation-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Obrigado pela sua doação! Em breve entraremos em contato.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

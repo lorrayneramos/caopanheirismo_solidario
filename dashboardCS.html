@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cãopanheirismo Solidário - Perfil do Usuário</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      background-color: #fff2e6;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #f7931e;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+    nav {
+      background-color: #c76a1f;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 20px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: #b55e1a;
+    }
+    main {
+      flex-grow: 1;
+      max-width: 900px;
+      margin: 30px auto;
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 30px 40px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      margin-bottom: 30px;
+    }
+    .profile-header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #f7931e;
+    }
+    .profile-header div {
+      flex-grow: 1;
+    }
+    .profile-header h2 {
+      color: #c76a1f;
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+    .profile-header p {
+      font-size: 1.1rem;
+      color: #555;
+      font-weight: 600;
+    }
+    .profile-info {
+      margin-top: 20px;
+    }
+    .profile-info h3 {
+      color: #f7931e;
+      margin-bottom: 12px;
+      font-weight: 700;
+      border-bottom: 2px solid #f7931e;
+      padding-bottom: 6px;
+    }
+    .info-item {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+    .info-label {
+      font-weight: 600;
+      color: #c76a1f;
+    }
+    .dashboard-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+    .dashboard-buttons a {
+      background-color: #f7931e;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      box-shadow: 0 4px 8px rgba(247,147,30,0.4);
+      transition: background 0.3s;
+    }
+    .dashboard-buttons a:hover {
+      background-color: #e67e1d;
+    }
+    footer {
+      background-color: #f7931e;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-weight: 600;
+    }
+    /* Responsividade */
+    @media (max-width: 600px) {
+      main {
+        padding: 20px 20px;
+      }
+      .profile-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .profile-header div {
+        flex-grow: 0;
+      }
+      .dashboard-buttons {
+        flex-direction: column;
+      }
+      .dashboard-buttons a {
+        width: 100%;
+        padding: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Cãopanheirismo Solidário
+  </header>
+
+  <nav>
+    <a href="telaprincipal.html">Home</a>
+    <a href="dashboardCS.html">Perfil</a>
+    <a href="ongs.html">ONGs e Abrigos</a>
+    <a href="campanha.html">Campanhas</a>
+    <a href="blog.html">Blog</a>
+    <a href="contato.html">Contato</a>
+    <a href="#">Sair</a>
+  </nav>
+
+  <main>
+    <section class="profile-header">
+      <img src="usuario.jpg" alt="Foto do Usuário" />
+      <div>
+        <h2>Usuário</h2>
+        <p>Usuário(a):</p>
+      </div>
+    </section>
+
+    <section class="profile-info">
+      <h3>Meus Dados</h3>
+      <div class="info-item"><span class="info-label">Nome completo:</span>Usuário</div>
+      <div class="info-item"><span class="info-label">E-mail:</span> user@example.com</div>
+      <div class="info-item"><span class="info-label">Tipo de usuário:</span> </div>
+      <div class="info-item"><span class="info-label">Telefone:</span> (21) 99999-9999</div>
+      <div class="info-item"><span class="info-label">Endereço:</span> Rua das Flores, 123 - Rio de Janeiro, RJ</div>
+    </section>
+
+    <div class="dashboard-buttons">
+      <a href="#">Editar Perfil</a>
+      <a href="#">Minhas Doações</a>
+      <a href="ongs.html">ONGs Parceiras</a>
+      <a href="campanha.html">Campanhas</a>
+      <a href="#">Sair</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Cãopanheirismo Solidário - Todos os direitos reservados.
+  </footer>
+</body>
+</html>

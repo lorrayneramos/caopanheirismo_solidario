@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cãopanheirismo Solidário - Detalhes ONG</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      background-color: #fff2e6;
+      color: #333;
+    }
+    header {
+      background-color: #f7931e;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+    nav {
+      background-color: #c76a1f;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 20px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: #b55e1a;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+    .ong-details img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      max-height: 400px;
+      object-fit: cover;
+    }
+    .ong-details h2 {
+      color: #c76a1f;
+      margin-bottom: 10px;
+    }
+    .ong-details p {
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+    .needs-list {
+      list-style: none;
+      padding: 0;
+    }
+    .needs-list li {
+      background: #fdf1e0;
+      margin: 8px 0;
+      padding: 10px;
+      border-left: 5px solid #f7931e;
+      border-radius: 4px;
+    }
+    .ong-details a.button {
+      background-color: #f7931e;
+      color: #fff;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+    .ong-details a.button:hover {
+      background-color: #e67e1d;
+    }
+    footer {
+      background-color: #f7931e;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cãopanheirismo Solidário</h1>
+  </header>
+
+  <nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="ongs.html">ONGs e Abrigos</a>
+    <a href="campanha.html">Campanhas</a>
+    <a href="blog.html">Blog</a>
+    <a href="contato.html">Contato</a>
+    <a href="#">Logout</a>
+  </nav>
+
+  <div class="container">
+    <section class="ong-details">
+      <img src="ong1-banner.jpg" alt="ONG Patinhas Felizes">
+      <h2>Patinhas Felizes</h2>
+      <p>A ONG Patinhas Felizes atua há mais de 10 anos no resgate, tratamento e adoção de cães e gatos em situação de vulnerabilidade. Organiza feiras de adoção, mutirões de castração e campanhas de arrecadação. Trabalha para conscientizar a comunidade sobre adoção responsável e combate ao abandono animal.</p>
+      <h3>Necessidades Atuais:</h3>
+      <ul class="needs-list">
+        <li>Ração para cães e gatos</li>
+        <li>Medicamentos (antibióticos, anti-pulgas)</li>
+        <li>Produtos de higiene (desinfetantes, sabão)</li>
+        <li>Materiais para feiras (banners, mesas)</li>
+        <li>Voluntários para eventos</li>
+      </ul>
+      <a href="#" class="button">Quero ajudar!</a>
+    </section>
+  </div>
+
+  <div class="container">
+   <!-- ONG 2 -->
+   <section class="ong-details" id="lar-amigo">
+    <img src="ong2-banner.jpg" alt="ONG Lar Amigo">
+    <h2>Lar Amigo</h2>
+    <p>O Lar Amigo oferece abrigo temporário para cães idosos ou vítimas de maus-tratos, enquanto busca lares definitivos. Foca na recuperação física e emocional dos animais e na sensibilização da comunidade para adoção responsável.</p>
+    <h3>Necessidades Atuais:</h3>
+    <ul class="needs-list">
+      <li>Ração especial para cães idosos</li>
+      <li>Medicamentos e suplementos</li>
+      <li>Produtos de higiene (xampus, escovas)</li>
+      <li>Voluntários para cuidados diários</li>
+      <li>Doações para tratamentos veterinários</li>
+    </ul>
+    <a href="#" class="button">Quero ajudar!</a>
+   </section>
+  </div>
+
+  <div class="container">
+  <!-- ONG 3 -->
+  <section class="ong-details" id="coracao-peludo">
+    <img src="ong3-banner.jpg" alt="ONG Coração Peludo">
+    <h2>Coração Peludo</h2>
+    <p>A ONG Coração Peludo é focada em conscientização sobre adoção responsável, castração e cuidados com animais de rua. Promove campanhas educativas, rodas de conversa e eventos comunitários para fortalecer a cultura do cuidado.</p>
+    <h3>Necessidades Atuais:</h3>
+    <ul class="needs-list">
+      <li>Material para campanhas (panfletos, banners)</li>
+      <li>Ração para animais de rua</li>
+      <li>Suporte para eventos e oficinas</li>
+      <li>Voluntários para divulgação e apoio</li>
+      <li>Recursos para castração</li>
+    </ul>
+    <a href="#" class="button">Quero ajudar!</a>
+  </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Cãopanheirismo Solidário - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
